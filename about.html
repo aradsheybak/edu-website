@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>University website design - Arad Sheybak</title>
+        <link rel="stylesheet" href="about.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
+    <script src="https://kit.fontawesome.com/509fc1a9b9.js" crossorigin="anonymous"></script>
+    </head>
+
+<body>
+    <section class="sub-header">
+        <!--this section add logo and navigation items to home-->
+        <nav>
+            <a href="index.html"><img src="eduford_img/logo.png" alt=""></a>
+            <div class="nav_items" id="navItems">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html">ABOUT</a></li>
+                    <li><a href="index.html">COURSE</a></li>
+                    <li><a href="index.html">BLOG</a></li>
+                    <li><a href="index.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>    
+
+       <h1>About Us</h1>
+
+    </section>
+
+<!-- ------------- About Us Content-------- -->
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>We are the world's largest University </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sunt odit rerum incidunt est id dolore suscipit facilis maxime commodi, officia
+                ut et ad ea? Vero iste nulla quas quod labore odio vel cum placeat, odit rerum illum quia
+                fugit a sint. Animi officiis amet consequuntur quis, quisquam nobis quas fugiat.
+                </p>
+                <a class="visit-btn" href="">EXPLORE NOW</a>
+        </div>
+
+        <div class="about-col">
+            <img src="eduford_img/about.jpg">
+        </div>
+
+    </div>
+
+</section>
+
+
+
+      <!-- --------- Footer ----------------->
+      <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, amet possimus! Impedit rem magnam quam facere distinctio ipsa illum, <br> quidem ducimus numquam nam vero? Ducimus, optio eum! Soluta, inventore dolore.</p>
+
+        <div class="icons">
+            <i title="www.facebook.com/arad.sheybak" id="facebook"class="fa fa-facebook"></i>
+            <i title="www.twitter.com/arad.sheybak" id="twitter"class="fa fa-twitter"></i>
+            <i title="www.telegram.com/arad.sheybak" id="telegram"class="fa fa-telegram"></i>
+            <i title="www.github.com/arad.sheybak" id="github"class="fa fa-github"></i>
+            <i title="www.whatsapp.com/arad.sheybak" id="whatsapp"class="fa fa-whatsapp"></i>
+        </div>
+        <p class="arad">Made With <i class="fa fa-heart"></i> by Arad Sheybak 
+        </p>
+    </section>
+    <script>
+        var navItems = document.getElementById("navItems")
+
+        function showMenu(){
+            navItems.style.right = "0"
+        }
+        
+        function hideMenu(){
+            navItems.style.right = "-200px"
+        }
+
+    </script>
+</body>
+</html>
