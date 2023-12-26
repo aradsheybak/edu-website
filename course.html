@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Course</title>
+        <link rel="stylesheet" href="course.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
+    <script src="https://kit.fontawesome.com/509fc1a9b9.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <section class="sub-header">
+        <!--this section add logo and navigation items to home-->
+        <nav>
+            <a href="index.html"><img src="eduford_img/logo.png" alt=""></a>
+            <div class="nav_items" id="navItems">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="index.html">BLOG</a></li>
+                    <li><a href="index.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>    
+
+    <h1>Our Courses</h1>
+
+    </section>
+
+   <!--------- course --------->
+   <section class="course">
+
+    <h1>Course We Offer</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="row">
+    <div class="course-col">
+        <h3>Intermediate</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero doloribus cum fugiat doloremque nostrum asperiores laudantium sit ad voluptate maxime soluta error autem, illo quae qui accusantium et voluptatem praesentium.</p>
+    </div>  
+    <div class="course-col">
+        <h3>Degree</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero doloribus cum fugiat doloremque nostrum asperiores laudantium sit ad voluptate maxime soluta error autem, illo quae qui accusantium et voluptatem praesentium.</p>
+    </div>   
+    <div class="course-col">
+        <h3>Post Graduation</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero doloribus cum fugiat doloremque nostrum asperiores laudantium sit ad voluptate maxime soluta error autem, illo quae qui accusantium et voluptatem praesentium.</p>
+    </div>   
+
+    </div>
+
+</section>
+
+
+    <!----facilities----->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="eduford_img/library.png">
+                <h3>World Class Library</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum vel ut quidem officia similique non, inventore quos odio? Natus, adipisci!</p>
+            </div>
+            <div class="facilities-col">
+                <img src="eduford_img/basketball.png">
+
+                <h3>Largest Play Ground</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum vel ut quidem officia similique non, inventore quos odio? Natus, adipisci!</p>
+            </div>
+
+            <div class="facilities-col">
+                <img src="eduford_img/cafeteria.png">
+                <h3>Tasty and Healthy Food</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum vel ut quidem officia similique non, inventore quos odio? Natus, adipisci!</p>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+    <!-- --------- Footer ----------------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
+            amet possimus! Impedit rem magnam quam facere distinctio ipsa illum,
+            <br> quidem ducimus numquam nam vero? Ducimus, optio eum! Soluta, inventore dolore.</p>
+
+        <div class="icons">
+            <i title="www.facebook.com/arad.sheybak" id="facebook"class="fa fa-facebook"></i>
+            <i title="www.twitter.com/arad.sheybak" id="twitter"class="fa fa-twitter"></i>
+            <i title="www.telegram.com/arad.sheybak" id="telegram"class="fa fa-telegram"></i>
+            <i title="www.github.com/arad.sheybak" id="github"class="fa fa-github"></i>
+            <i title="www.whatsapp.com/arad.sheybak" id="whatsapp"class="fa fa-whatsapp"></i>
+        </div>
+        <p class="arad">Made With <i class="fa fa-heart"></i> by Arad Sheybak 
+        </p>
+    </section>
+    <script>
+        var navItems = document.getElementById("navItems")
+
+        function showMenu(){
+            navItems.style.right = "0"
+        }
+        
+        function hideMenu(){
+            navItems.style.right = "-200px"
+        }
+
+    </script>
+</body>
+</html>
