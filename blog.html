@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog</title>
+        <link rel="stylesheet" href="blog.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
+    <script src="https://kit.fontawesome.com/509fc1a9b9.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <section class="sub-header">
+        <!--this section add logo and navigation items to home-->
+        <nav>
+            <a href="index.html"><img src="eduford_img/logo.png" alt=""></a>
+            <div class="nav_items" id="navItems">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="index.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>    
+
+    <h1>Our certificates & Online Programs For 2024</h1>
+
+    </section>
+
+<section class="blog-content">
+    <div class="row">
+        <div class="content-left">
+            <img src="eduford_img/certificate.jpg">
+            <h2>Our certificates & Online Programs For 2024</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi animi alias magnam ipsa libero nostrum dolorum sed, accusamus nemo! Molestias consequatur earum voluptate nobis laboriosam deserunt natus iure quaerat, adipisci omnis? Sapiente unde ipsum nam, placeat aliquam temporibus provident, doloribus maxime enim magnam expedita, blanditiis deserunt harum accusantium ad!</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, praesentium possimus cumque cupiditate repudiandae omnis a. Debitis, dolorem, officia illum totam laudantium consequuntur, rem sint perferendis non voluptates nemo repellendus?</p>
+            <br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem accusamus deleniti maiores dicta corrupti quisquam suscipit repellat, illum distinctio officiis, provident iste sint ex fuga? Dolore, ipsam inventore reprehenderit minima quaerat quisquam molestias voluptas eveniet alias? Commodi, corporis necessitatibus architecto minus amet suscipit illum adipisci.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati optio explicabo molestiae inventore alias quam.</p>
+
+            <div class="comment-box">
+                <h3>Leave a comment</h3>
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email"placeholder="Enter Email">
+                    <textarea rows="5" placeholder="Your Comment"></textarea>
+                    <button type="submit" class="visit-btn">Post Comment</buttonty>
+                </form>
+            </div>
+
+        </div>
+        <div class="content-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Business Analytics</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Programming Language</span>
+                <span>45</span>
+            </div>
+            <div>
+                <span>Machin Learning</span>
+                <span>6</span>
+            </div>
+            <div>
+                <span>Data Science</span>
+                <span>18</span>
+            </div>
+            <div>
+                <span>Commerce</span>
+                <span>34</span>
+            </div>
+            <div>
+                <span>Journalism</span>
+                <span>41</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- --------- Footer ----------------->
+    <section class="footer">
+            <h4>About Us</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
+                amet possimus! Impedit rem magnam quam facere distinctio ipsa illum,
+                <br> quidem ducimus numquam nam vero? Ducimus, optio eum! Soluta, inventore dolore.</p>
+    
+            <div class="icons">
+                <i title="www.facebook.com/arad.sheybak" id="facebook"class="fa fa-facebook"></i>
+                <i title="www.twitter.com/arad.sheybak" id="twitter"class="fa fa-twitter"></i>
+                <i title="www.telegram.com/arad.sheybak" id="telegram"class="fa fa-telegram"></i>
+                <i title="www.github.com/arad.sheybak" id="github"class="fa fa-github"></i>
+                <i title="www.whatsapp.com/arad.sheybak" id="whatsapp"class="fa fa-whatsapp"></i>
+            </div>
+            <p class="arad">Made With <i class="fa fa-heart"></i> by Arad Sheybak 
+            </p>
+    </section>
+    <script>
+            var navItems = document.getElementById("navItems")
+    
+            function showMenu(){
+                navItems.style.right = "0"
+            }
+            
+            function hideMenu(){
+                navItems.style.right = "-200px"
+            }
+    
+    </script>
+</body>
+</html>
