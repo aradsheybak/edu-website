@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+
+}
+.nav_items{
+    flex:1;
+    text-align: right;
+}
+
+.nav_items ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav_items ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav_items ul li::after{
+content: '';
+width: 0%;
+height: 2px;
+background: #f44336;
+display: block;
+margin: auto;
+transition: 0.5s;
+}
+
+.nav_items ul li:hover::after{
+width: 100%;
+}
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .nav_items ul li{
+        display: block;
+    }
+    .nav_items{
+        position: fixed;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .nav_items ul{
+        padding: 30px;
+    }
+
+
+}
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(eduford_img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    margin-top: 100px;
+}
+
+
+.row{
+    margin-top:5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.visit-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #f44336;
+    padding: 12px 35px;
+    background: transparent;
+    border: 1px solid #f44336;
+    border-radius: 5px;
+    font-size: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+    }
+
+    .visit-btn:hover{
+        background: #f44336;
+        color: #fff;
+        transform: scale(1.2);
+    }
+
+    /* ---------Contact Us--------- */
+
+    .location{
+        width: 80%;
+        margin: auto;
+        padding: 80px 0;
+    }
+    .location iframe{
+        width: 100%;
+
+    }
+    .contact-us{
+        width: 80%;
+        margin: auto;
+    }
+
+    .contact-col{
+        flex-basis: 48%;
+        margin-bottom: 30px;
+    }
+    .contact-col div{
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .contact-col span{
+    margin-left:10px;
+    font-weight: 600;
+    }
+
+    .contact-col div .fa{
+    font-size: 25px;
+    color: #f44336;
+    margin: 10px;
+    }
+    .contact-col div p{
+        padding: 0;
+    }
+    .contact-col div h5{
+        font-size: 20px;
+        margin-bottom: 5px;
+        color: #555;
+        font-weight: 400;
+    }
+
+    .contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    }
+
+    @media(max-width:700px){
+        .row{
+            display: block;
+        }
+    }
+
+
+
+/* ------Footer---- */
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+#facebook{
+    color: blue;
+}
+#facebook:hover{
+    transform: scale(1.5);
+}
+
+#twitter{
+    color: dodgerblue;
+
+}
+#twitter:hover{
+    transform: scale(1.5);
+}
+
+#telegram{
+    color: mediumblue;
+}
+#telegram:hover{
+    transform: scale(1.5);
+}
+
+#whatsapp{
+    color: green;
+}
+#whatsapp:hover{
+    transform: scale(1.5);
+}
+
+#github:hover{
+    transform: scale(1.5);
+}
+
+.arad{
+    font-size: 14px;
+    font-weight: 600;
+}
+.arad i {
+    color: #f44336;
+}
